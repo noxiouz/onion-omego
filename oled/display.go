@@ -82,7 +82,7 @@ func (d *display) SetCursor(row, column uint8) error {
 	}
 
 	if row > OLED_EXP_CHAR_ROWS {
-		return fmt.Errorf("row %d must be lower than %d", row, OLED_EXP_CHAR_COLUMNS)
+		return fmt.Errorf("row %d must be lower than %d", row, OLED_EXP_CHAR_ROWS)
 	}
 
 	for _, cmd := range []uint8{

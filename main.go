@@ -21,7 +21,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err := display.SetCursor(16, 3); err != nil {
+	if err := display.SetCursor(3, 3); err != nil {
 		log.Fatal(err)
 	}
 	if _, err := display.WriteText("SOME_LONG_TEXT with @ <> ! ?"); err != nil {
